@@ -85,7 +85,7 @@ avatar:
   effect: false
 
 # Disable all banner image
-disable_top_img: true
+disable_top_img: false
 
 # The banner image of home page
 index_img: /img/fax.jpg
@@ -639,7 +639,7 @@ aside:
     button:
       enable: true
       icon: fab fa-github
-      text: Follow Me
+      text: GiHub
       link: https://github.com/NotSpeak/NotSpeak.github.io
   card_announcement:
     enable: true
