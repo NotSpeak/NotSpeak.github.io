@@ -1,5 +1,5 @@
 ---
 title: {{ title }}
 date: {{ date }}
-top_img: /img/fax.jpg
+top_img: /img/cover1.jpg
 ---

@@ -88,31 +88,31 @@ avatar:
 disable_top_img: false
 
 # The banner image of home page
-index_img: /img/fax.jpg
+index_img: /img/cover1.jpg
 
 # If the banner of page not setting, it will show the top_img
-default_top_img: /img/fax.jpg
+default_top_img: /img/cover1.jpg
 
 # The banner image of archive page
-archive_img: /img/fax.jpg
+archive_img: /img/cover1.jpg
 
 # If the banner of tag page not setting, it will show the top_img
 # note: tag page, not tags page (子標籤頁面的 top_img)
-tag_img: /img/fax.jpg
+tag_img: /img/cover1.jpg
 
 # The banner image of tag page
 # format:
 #  - tag name: xxxxx
-tag_per_img: /img/fax.jpg
+tag_per_img: /img/cover1.jpg
 
 # If the banner of category page not setting, it will show the top_img
 # note: category page, not categories page (子分類頁面的 top_img)
-category_img: /img/fax.jpg
+category_img: /img/cover1.jpg
 
 # The banner image of category page
 # format:
 #  - category name: xxxxx
-category_per_img: /img/fax.jpg
+category_per_img: /img/cover1.jpg
 
 cover:
   # display the cover or not (是否顯示文章封面)
@@ -643,7 +643,7 @@ aside:
       link: https://github.com/NotSpeak/NotSpeak.github.io
   card_announcement:
     enable: true
-    content: This is my Blog
+    content: Come on, every day !
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all
