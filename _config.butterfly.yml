@@ -841,6 +841,7 @@ inject:
     # - <link rel="stylesheet" href="/xxx.css">
     ## 星空背景
     - <link rel="stylesheet" href="/css/universe.css">
+    - <link rel="stylesheet" href="/css/custom.css">
   bottom:
     # - <script src="xxxx"></script>
 		# 星空背景

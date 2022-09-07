@@ -5,8 +5,8 @@ tags:
 - 数组方法
 categories:
 - 数组
-top_img: /img/cover1.jpg
-cover: /img/cover1.jpg
+top_img: /img/cover7.jpg
+cover: /img/cover7.jpg
 ---
 ### 1、push()
 
