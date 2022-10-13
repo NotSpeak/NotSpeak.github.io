@@ -11,7 +11,7 @@ cover: /img/cover2.jpg
 ## 前端性能优化
 ### 如何优化请求
 #### 图片方面
-#### ① 精灵图
+##### ① 精灵图
 {% note %}
 通过 background-position 来取每个图标位置，最后每个图标
 ===>
@@ -20,7 +20,7 @@ cover: /img/cover2.jpg
 👇
 {% endnote %}
 ![精灵图](/img/jingling.png)
-#### ② 小图标 Base64
+##### ② 小图标 Base64
 {% note %}
 虽然 内存没有减小 ，存储为超长的字符串码
 但是不用请求各种小图标 （ 减少请求频率）
@@ -46,7 +46,7 @@ module: {
   ]
 }
 ```
-#### ③ 图片懒加载
+##### ③ 图片懒加载
 {% note %}
 电商系统，最为常用；
 原理： 👇
@@ -85,7 +85,7 @@ module: {
   }
  </script>
 ```
-#### ④ 图标库 采用 svg
+##### ④ 图标库 采用 svg
 {% note %}
 svg 是 HTML5 新增的 矢量图 （ 减少请求 ）
 svg 图标占用内存非常小
@@ -96,8 +96,8 @@ Iconify 图标库 ( 包含 Antd、Element ui …的图标 )
 npm i -D @iconify/json
 地址：👇
 {%btn 'https://icon-sets.iconify.design/',点击跳转（开源免费）,far fa-hand-point-right,block left %}
-请求内容方面
 {% endnote %}
+#### 请求内容方面
 ##### ① 减少请求内容大小
 {% note %}
 每次请求的数据不要太大
