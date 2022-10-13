@@ -15,7 +15,7 @@ array.forEach((item, index, array) => {
 　　console.log(item);
 });
 ```
-{% note %}
+{% note info no-icon%}
 forEach会遍历数组, 没有返回值, 不允许在循环体内写return, 不会改变原来数组的内容.forEach()也可以循环对象。
 {% endnote %}
 ### 2.map()
@@ -27,7 +27,7 @@ let temp = array.map((item, index, array) => {
 console.log(temp);　　//  [10, 20, 30, 40];
 console.log(array);　　// [1, 2, 3, 4]
 ```
-{% note %}
+{% note info no-icon%}
 map 遍历数组, 会返回一个新数组, 不会改变原来数组里的内容
 {% endnote %}
 ```
@@ -43,7 +43,7 @@ let temp = array.filter((item, index, array) => {
 console.log(temp);　　// [4]
 console.log(array);　　// [1, 2, 3, 4]
 ```
-{% note %}
+{% note info no-icon%}
 filter 会过滤掉数组中不满足条件的元素, 把满足条件的元素放到一个新数组中, 不改变原数组
 {% endnote %}
 ### 4.reduce()
@@ -58,7 +58,7 @@ let temp = array.reduce((x, y) => {
 console.log(temp);　　// 10
 console.log(array);　　// [1, 2, 3, 4]
 ```
-{% note %}
+{% note info no-icon%}
 x 是上一次计算过的值, 第一次循环的时候是数组中的第1个元素
 y 是数组中的每个元素, 第一次循环的时候是数组的第2个元素
 {% endnote %}
@@ -70,7 +70,7 @@ let bo = array.every((item, index, array) => {
 });
 console.log(bo);　　　　// false;
 ```
-{% note %}
+{% note info no-icon%}
 every遍历数组, 每一项都是true, 则返回true, 只要有一个是false, 就返回false
 {% endnote %}
 ### 6.some()
@@ -81,7 +81,7 @@ let temp = array.some((item, index, array) => {
 });
 console.log(temp);　　// false
 ```
-{% note %}
+{% note info no-icon%}
 遍历数组的每一项, 有一个返回true, 就停止循环
 
 以上6个方法IE9及以上才支持。不过可以通过babel转义支持IE低版本。

@@ -9,7 +9,7 @@ top_img: /img/cover5.jpg
 cover: /img/cover5.jpg
 ---
 ## 一、vue-router的理解
-{% note %}
+{% note info no-icon%}
 首先，需要理解一下vue-router：
 vue-router是vue的一个插件，专门用来实现SPA应用。SPA也就是单页Web应用，特点是：整个应
 用只有一个完整的页面，点击页面中的导航链接不会刷新页面，只会做页面的局部更新，数据需要
@@ -17,12 +17,12 @@ vue-router是vue的一个插件，专门用来实现SPA应用。SPA也就是单�
 {% endnote %}
 ## 二、路由的理解
 ### 什么是路由：
-{% note %}
+{% note info no-icon%}
 1、一个路由就是一组映射关系（key-value）
 2、key为路径，value可能是function或component
 {% endnote %}
 ### 路由的分类：
-{% note %}
+{% note info no-icon%}
 1、后端路由
 （1）理解：value是function，用于处理客户端提交的请求。
 （2）工作过程：服务器接收到一个请求时，根据请求路径找到匹配的函数来处理请求，返回响应数据。
@@ -31,7 +31,7 @@ vue-router是vue的一个插件，专门用来实现SPA应用。SPA也就是单�
 （2）工作过程：当浏览器的路径改变时，对应的组件就会显示。
 {% endnote %}
 ## 三、路由基本使用
-{% note %}
+{% note info no-icon%}
 首先需要在main.js中配置路由：
 {% endnote %}
 ```
@@ -63,7 +63,7 @@ router:router
 
 （<router-link>的replace属性：
 ```
-{% note %}
+{% note info no-icon%}
 1、作用：控制路由跳转时操作浏览器历史记录的模式；
 
 2、浏览器的历史记录有两种写入模式：分别为push和replace，push是追加历史记录，replace是替换当前记录，路由跳转时候默认为push；
@@ -76,7 +76,7 @@ router:router
 <router-view></router-view>
 ```
 ### 几个注意点：
-{% note %}
+{% note info no-icon%}
 1、路由组件通常存放在pages文件夹，一般组件通常存放在components文件夹；
 
 2、通过切换，“隐藏”了的路由组件，默认是被销毁掉的，需要的时候再去挂载；
@@ -86,7 +86,7 @@ router:router
 4、整个应用只有一个router，可以通过组件的$router属性获取到。
 {% endnote %}
 ## 四、多级（嵌套）路由 
-{% note %}
+{% note info no-icon%}
 1、配置路由规则，使用children配置项：
 {% endnote %}
 ```
@@ -130,14 +130,14 @@ router:router
 
     ]
 ```
-{% note %}
+{% note info no-icon%}
 2、跳转的时候要写完整路径：
 {% endnote %}
 ```
 <router-link class="list-group-item" to="/home/news" active-class="active">News</router-link>
 ```
 ## 五、路由的query参数
-{% note %}
+{% note info no-icon%}
 1、传递参数
 {% endnote %}
 ```
@@ -159,7 +159,7 @@ router:router
 
 </router-link>
 ```
-{% note %}
+{% note info no-icon%}
 2、接收参数
 {% endnote %}
 ```
@@ -168,7 +168,7 @@ router:router
 <li>消息标题：{{$route.query.title}}</li>
 ```
 ## 六、路由的params参数
-{% note %}
+{% note info no-icon%}
 1、配置路由，声明接收params参数
 {% endnote %}
 ```
@@ -226,7 +226,7 @@ routes:[
 
     ]
 ```
-{% note %}
+{% note info no-icon%}
 2、传递参数
 {% endnote %}
 ```
@@ -256,7 +256,7 @@ routes:[
 
 </li>
 ```
-{% note %}
+{% note info no-icon%}
 3、接收参数
 {% endnote %}
 ```
@@ -265,7 +265,7 @@ routes:[
 <li>消息标题：{{$route.params.title}}</li>
 ```
 ## 七、编程式路由
-{% note %}
+{% note info no-icon%}
 1、作用：不借助<router-link>实现路由模块，让路由跳转更灵活
 2、编码：
 {% endnote %}
@@ -315,7 +315,7 @@ methods:{
     }
 ```
 ## 八、缓存路由组件
-{% note %}
+{% note info no-icon%}
 1、作用：让不展示的路由组件保持挂载，不被销毁。
 2、具体代码：
 {% endnote %}
@@ -325,14 +325,14 @@ methods:{
 </keep-alive>
 ```
 ## 九、两个新的生命周期钩子
-{% note %}
+{% note info no-icon%}
 1、作用：路由组件所独有的两个钩子，用于捕获路由组件的激活状态。
 2、具体名字：
 actived：路由组件被激活时触发；
 deactived：路由组件失活时触发。
 {% endnote %}
 ## 十、路由守卫
-{% note %}
+{% note info no-icon%}
 1、作用：对路由进行权限控制；
 2、分类：全局守卫、独享守卫、组件内守卫；
 3、全局守卫：
@@ -353,7 +353,7 @@ router.beforeEach((to,from,next)=>{
     } 
 })
 ```
-{% note %}
+{% note info no-icon%}
 全局后置路由守卫，初始化时执行，每次路由切换之后被调用
 {% endnote %}
 ```
@@ -373,7 +373,7 @@ router.afterEach(()=>{
 
 })
 ```
-{% note %}
+{% note info no-icon%}
 4、独享路由守卫：某一个路由所独享的；
 {% endnote %}
 ```
@@ -397,7 +397,7 @@ beforeEnter:(to,from,next)=>{
 
 }
 ```
-{% note %}
+{% note info no-icon%}
 5、组件内路由守卫
 //通过路由规则进入该组件时调用
 {% endnote %}
@@ -418,7 +418,7 @@ beforeEnter:(to,from,next)=>{
         }
     },
 ```
-{% note %}
+{% note info no-icon%}
 //通过路由规则离开该组件时调用
 {% endnote %}
 ```

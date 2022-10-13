@@ -9,7 +9,7 @@ top_img: /img/cover7.jpg
 cover: /img/cover7.jpg
 ---
 ### 1、push()
-{% note %}
+{% note info no-icon%}
 向数组的末尾添加新内容
 参数：要添加的项。传递多个用逗号隔开，任何数据类型都可以
 返回值：新增后数组的长度
@@ -23,7 +23,7 @@ ary1.push(100); //返回一个新的长度
 length=4console.log(ary1)//结果为 [12,34,26,100]
 ```
 ### 2、pop()
-{% note %}
+{% note info no-icon%}
 删除数组的最后一项
 参数：无
 返回值：被删除的项
@@ -37,7 +37,7 @@ ary2.pop();//删除的最后一项为10
 console.log(ary2);//[108, 112, 39]
 ```
 ### 3、shift()
-{% note %}
+{% note info no-icon%}
 删除数组的第一项
 参数：无
 返回值：被删除的项
@@ -51,7 +51,7 @@ ary3.shift();//删除的第一项为0
 console.log(ary3);//[108, 112, 39]
 ```
 ### 4、unshift()
-{% note %}
+{% note info no-icon%}
 向数组首位添加新内容
 参数：要添加的项，多项用','隔开
 返回值：新数组的长度
@@ -65,7 +65,7 @@ ary4.unshift('a','b');
 console.log(ary4);//["a", "b", "c", "d"]
 ```
 ### 5、slice()
-{% note %}
+{% note info no-icon%}
 按照条件查找出其中的部分内容
 参数：
 array.slice(n, m)，从索引n开始查找到m处（不包含m）
@@ -85,7 +85,7 @@ let ary5 = [1,2,3,4,5,6,7,8,9];
 console.log(ary5.slice(-2,-1));//[8]
 ```
 ### 6、splice()
-{% note %}
+{% note info no-icon%}
 对数组进行增删改
 增加：ary.splice(n,0,m)从索引n开始删除0项，把m或者更多的内容插入到索引n的前面
 返回空数组
@@ -121,7 +121,7 @@ console.log(ary5.slice(-2,-1));//[8]
    console.log(ary6_s.splice(3));//[66, 77, 88]
 ```
 ### 7、join()
-{% note %}
+{% note info no-icon%}
 用指定的分隔符将数组每一项拼接为字符串
 参数：指定的分隔符（如果省略该参数，则使用逗号作为分隔符）
 返回值：拼接好的字符串
@@ -133,7 +133,7 @@ let ary7 = [1,2,3];
 console.log(ary7.join('、'));//1、2、3
 ```
 ### 8、concat()
-{% note %}
+{% note info no-icon%}
 用于连接两个或多个数组
 参数：参数可以是具体的值，也可以是数组对象。可以是任意多个
 返回值：返回连接后的新数组
@@ -147,7 +147,7 @@ let ary80 = ary8.concat('好');
 console.log(ary80);//["你", "好"]
 ```
 ### 9、indexOf()
-{% note %}
+{% note info no-icon%}
 检测当前值在数组中第一次出现的位置索引
 参数：array.indexOf(item,start) item:查找的元素 start:字符串中开始检索的位置
 返回值：第一次查到的索引，未找到返回-1
@@ -161,7 +161,7 @@ console.log(ary9.indexOf('c'));//2
 console.log(ary9.indexOf('a',3))//5
 ```
 ### 10、lastIndexOf()
-{% note %}
+{% note info no-icon%}
 检测当前值在数组中最后一次出现的位置索引
 参数：array.lastIndexOf(item,start) item:查找的元素 start:字符串中开始检索的位置
 返回值：第一次查到的索引，未找到返回-1
@@ -175,7 +175,7 @@ console.log(ary10.lastIndexOf('c'));//2
 console.log(ary10.lastIndexOf('f',1))//-1
 ```
 ### 11、includes()
-{% note %}
+{% note info no-icon%}
 判断一个数组是否包含一个指定的值
 参数：指定的内容
 返回值：布尔值
@@ -189,7 +189,7 @@ console.log(ary13.includes('c'));//true
 console.log(ary13.includes(2));//false
 ```
 ### 12、sort()
-{% note %}
+{% note info no-icon%}
 对数组的元素进行排序（默认是从小到大来排序 并且是根据字符串来排序的）
 参数：可选(函数) 规定排序规则 默认排序顺序为按字母升序
 返回值：排序后新数组
@@ -206,7 +206,7 @@ let ary11 = [32,44,23,54,90,12,9];
    console.log(ary11);
 ```
 ### 13、reverse()
-{% note %}
+{% note info no-icon%}
 把数组倒过来排列
 参数：无
 返回值：倒序后新数组
@@ -218,7 +218,7 @@ let ary12 = [6,8,10,12];
 console.log(ary12.reverse());//[12, 10, 8, 6]
 ```
 ### 14、forEach()
-{% note %}
+{% note info no-icon%}
 循环遍历数组每一项
 参数：函数 ary.forEach(function(item,index,ary){}) item:每一项 index:索引 ary:当前数组
 返回值：无

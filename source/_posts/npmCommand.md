@@ -10,7 +10,7 @@ cover: /img/cover1.jpg
 ---
 ## npm命令
 ### 1. npm 安装配置（可选）
-{% note %}
+{% note info no-icon%}
 现在安装的新版本的nodejs可以直接使用默认配置的即可，不须再配置任何内容。
  1. 在nodejs安装的根目录下新建 node_cache 和 node_global 两个文件夹。
  2. 分别使用以下命令设置全局的安装包目录：

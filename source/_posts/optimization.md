@@ -12,7 +12,7 @@ cover: /img/cover2.jpg
 ### 如何优化请求
 #### 图片方面
 ##### ① 精灵图
-{% note %}
+{% note info no-icon%}
 通过 background-position 来取每个图标位置，最后每个图标
 ===>
 优势 :
@@ -21,7 +21,7 @@ cover: /img/cover2.jpg
 {% endnote %}
 ![精灵图](/img/jingling.png)
 ##### ② 小图标 Base64
-{% note %}
+{% note info no-icon%}
 虽然 内存没有减小 ，存储为超长的字符串码
 但是不用请求各种小图标 （ 减少请求频率）
 应用 （webpack 打包配置）
@@ -47,7 +47,7 @@ module: {
 }
 ```
 ##### ③ 图片懒加载
-{% note %}
+{% note info no-icon%}
 电商系统，最为常用；
 原理： 👇
 滚动到图片位置，再去请求图片
@@ -86,7 +86,7 @@ module: {
  </script>
 ```
 ##### ④ 图标库 采用 svg
-{% note %}
+{% note info no-icon%}
 svg 是 HTML5 新增的 矢量图 （ 减少请求 ）
 svg 图标占用内存非常小
 将图标库，选择svg类型图标库
@@ -99,7 +99,7 @@ npm i -D @iconify/json
 {% endnote %}
 #### 请求内容方面
 ##### ① 减少请求内容大小
-{% note %}
+{% note info no-icon%}
 每次请求的数据不要太大
 表格和列表 类型 后端分页 👇
 — 分页尽量后端处理
@@ -107,13 +107,13 @@ npm i -D @iconify/json
 …
 {% endnote %}
 ##### ②更改请求方式
-{% note %}
+{% note info no-icon%}
 对于获取 表格、或列表内容 ，尽量 get 请求
 获取表格， 一般只会传 页码和大小、类型 （ 不会涉及重要参数）
 get 请求的 速度 > post 请求 速度
 {% endnote %}
 ##### ③ 防抖节流
-{% note %}
+{% note info no-icon%}
 防抖：👇例子
 表单 点击按钮提交时，然后 几秒内，按钮 不能被点击或点击无效，避免过快重复点击
 、、、
@@ -121,7 +121,7 @@ get 请求的 速度 > post 请求 速度
 搜索框匹配内容时，用户 停止输入到 几秒时去搜索，而不是输入一个 触发一次
 {% endnote %}
 ##### ④ 利用存储
-{% note %}
+{% note info no-icon%}
 本地存储 ：
 cookie、localStorage、sessionStorage
 场景：👇
@@ -130,7 +130,7 @@ cookie、localStorage、sessionStorage
 {% endnote %}
 ### 代码优化
 #### ① 事件委托
-{% note %}
+{% note info no-icon%}
 给 父标签 绑定点击事件
 点击 子标签 同样会执行该函数
 举个简单的例子： 👇
@@ -150,7 +150,7 @@ cookie、localStorage、sessionStorage
 </script>
 ```
 #### ② 减少dom操作
-{% note %}
+{% note info no-icon%}
 少 通过 document 来获取对象 如：👇
 document.getElementsByClassName( ‘content’ ).innerHTML = 123
 因为同时操作多个标签 => 大量的 重绘 或 重排
@@ -158,11 +158,11 @@ document.getElementsByClassName( ‘content’ ).innerHTML = 123
 如： vue 、react 都采用 虚拟dom ，多次操作一次渲染
 {% endnote %}
 #### ③ 页面结构优化
-{% note %}
+{% note info no-icon%}
 将script标签放到最后面可以提前解析DNS资源。
 {% endnote %}
 #### ④ css 优化
-{% note %}
+{% note info no-icon%}
 选择器准确可以减少匹配的时间。
 如 ： .box>.header_box>.content{ … }
 less 和 sass 可以层级嵌套 会 加快匹配时间
@@ -183,7 +183,7 @@ less 和 sass 可以层级嵌套 会 加快匹配时间
 ```
 ### 框架和打包
 #### ① SSR 服务端渲染
-{% note %}
+{% note info no-icon%}
 页面在服务端直接渲染成 HTML 字符串，作为服务端响应返回给浏览器，最后在浏览器端将生成静态的 HTML
 优势：
  · 首次加载速度快 ，利于SEO
@@ -195,7 +195,7 @@ nuxt 是一个SSR 最为流行的框架之一 基于vue 👇
 {%btn 'https://v3.nuxtjs.org/',点击了解 nuxt ,far fa-hand-point-right,block left %}
 {% endnote %}
 #### ② CDN 加速
-{% note %}
+{% note info no-icon%}
 CDN 加速就是将 依赖部署在其他站点上，而不是把资源打包到项目中 。
 不需要 npm 或 yarn 下载 ，只需要html 文件的 头部去导入 👇
 {% endnote %}
@@ -215,7 +215,7 @@ module.exports = {
     },
 }
 ```
-{% note %}
+{% note info no-icon%}
 优势：
  · 这种 非常适合带宽比较小的服务器
  · 打包会更加小
@@ -224,19 +224,19 @@ module.exports = {
  · 请求的依赖包是全量的，没有按需加载
 {% endnote %}
 #### ③ tree-shaking (摇树优化)
-{% note %}
+{% note info no-icon%}
 摇树优化 ：顾名思义就是要掉，身上多余的东西
 就是打包的时候 ，依赖中没用到的功能，就不打进去
 让生产环境的包足够小 👇
 向vue 、react 都自带这种功能
 {% endnote %}
 #### ④ js 最小拆包
-{% note %}
+{% note info no-icon%}
 进入每个子页面加载每次用到的 js 逻辑
 可以通过 webpack 和 vite 的配置实现
 {% endnote %}
 #### ⑤ 路由懒加载
-{% note %}
+{% note info no-icon%}
 在进入那个路由，加在对应的逻辑
 在 vue 和 react 中 应用 👇
 {% endnote %}
@@ -246,7 +246,7 @@ vue 采用 () => import('/...') 来导入
 react 采用 React.lazy(() => import('/...'))
 ```
 #### ⑥ 异步组件，异步Js
-{% note %}
+{% note info no-icon%}
 如果有的组件，是通过点击 和 操作之后出现的
 这时就可以通过 异步组件和异步Js
 实现 功能按需加载 已vue 为例：👇
