@@ -10,15 +10,15 @@ cover: /img/cover1.jpg
 ---
 ## npm命令
 ### 1. npm 安装配置（可选）
+{% note %}
 现在安装的新版本的nodejs可以直接使用默认配置的即可，不须再配置任何内容。
-```
  1. 在nodejs安装的根目录下新建 node_cache 和 node_global 两个文件夹。
  2. 分别使用以下命令设置全局的安装包目录：
     npm config set prefix "D:\Program Files\nodejs\node_global"
     npm config set cache "D:\Program Files\nodejs\node_cache"
  3. 配置环境变量：
    打开计算机的环境变量，找到系统变量，新增一项 NODE_PATH，值为安装目录下的nodejs，   D:\Program Files\nodejs\node_global\node_modules
-```
+{% endnote %}
 ### 2. 查看 npm 版本
 ```
 npm -v

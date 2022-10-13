@@ -9,13 +9,17 @@ top_img: /img/cover11.jpg
 cover: /img/cover11.jpg
 ---
 ## Git 基本操作
+{% note %}
 Git 的工作就是创建和保存你项目的快照及与之后的快照进行对比。
 Git 常用的是以下 6 个命令：git clone、git push、git add 、git commit、git checkout、git pull
+{% endnote %}
 ### 说明：
+{% note %}
 workspace：工作区
 staging area：暂存区/缓存区
 local repository：版本库或本地仓库
 remoterepository：远程仓库
+{% endnote %}
 ### 简单的操作步骤
 ```
   $ git init //初始化仓库。
@@ -23,7 +27,9 @@ remoterepository：远程仓库
   $ git commit  //将暂存区内容添加到仓库中。
 ```
 ### 创建仓库
+{% note %}
   下表列出了 git 创建仓库的命令：
+{% endnote %}
 | 命令 | 说明 | 
 |:-----|:-----|
 | git init | 初始化仓库 |
@@ -33,8 +39,10 @@ remoterepository：远程仓库
 |:-----|:-----|
 | git remote add origin https://github.com/xienb/NPC.git | 关联到远程仓库 |
 ### 提交与修改
+{% note %}
   Git 的工作就是创建和保存你的项目的快照及与之后的快照进行对比。
   下表列出了有关创建与提交你的项目的快照的命令：
+{% endnote %}
 | 命令 | 说明 | 
 |:-----|:-----|
 | git add	| 添加文件到仓库 |
